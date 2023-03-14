@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lylah's Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-white">
+    <header class="sticky top-0 bg-blue-900 h-24 shadow-lg">
+        <nav class="container mx-auto px-4 md:px-6 lg:px-8 h-full flex justify-center items-center">
+            <ul class="flex space-x-4">
+                <li><a href="#" class="font-semibold text-lg text-white">Home</a></li>
+                <li>
+                    <a href="#" class="font-semibold text-lg text-white">About</a>
+                </li>
+                <li>
+                    <a href="#" class="font-semibold text-lg text-white">
+                        <img src="./assets/images/logo.png" alt="" srcset="" class="h-20" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="font-semibold text-lg text-white">Services</a>
+                </li>
+                <li>
+                    <a href="#" class="font-semibold text-lg text-white">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="bg-cover bg-center h-screen flex items-center"
+            style="background-image: url('./assets/images/background_image.png');">
+            <div class="container mx-auto px-6 text-center max-w-1/2">
+                <h1 class="text-4xl font-bold mb-2 text-white">
+                    Burwell v Hobby Lobby
+                    <i class="fas fa-gavel mr-2 animate-pulse"></i>
+                </h1>
+                <h3 class="text-xl max-w-3/4">
+                    In the case of Burwell v. Hobby Lobby,
+                    <br />
+                    it was argued that closely owned businesses
+                    <br />
+                    had the right to exercise their religion freely and might choose
+                    <br />
+                    not to offer certain types of contraception coverage to their
+                    employees
+                    <br />
+                    if doing so would conflict with their religious convictions.
+                </h3>
+                <div class="flex justify-center mt-8">
+                    <button class="py-2 px-4 bg-blue-500 text-white rounded-md mr-4"
+                        onclick="scrollToSection('#plantiff')">
+                        Plantiff
+                    </button>
+                    <button class="py-2 px-4 bg-green-500 text-white rounded-md"
+                        onclick="scrollToSection('#defandant')">
+                        Defandant
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-700 to-blue-500"
+            id="plantiff">
+            <h1 class="text-6xl font-bold text-center">Plaintiff</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Hobby_Lobby_logo.svg/2560px-Hobby_Lobby_logo.svg.png"
+                class="max-w-300 mt-10 mb-10" style="max-width: 30%;" />
+            <div style="max-width: 75%;">
+                <p class="mt-8 text-xl">
+                    Claimed that covering these forms of contraception went against
+                    their religious convictions, objected to providing coverage for
+                    them. The main claim made by Hobby Lobby was that the ACA's mandate
+                    for contraceptive coverage infringed on their right to religious
+                    freedom under the RFRA. The business argued that certain forms of
+                    contraception shouldn't be covered by insurance (plaintiff
+                    argument).
+                </p>
+
+            </div>
+            <button class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full 
+        focus:outline-none focus:shadow-outline inline-flex items-center mt-10" onclick="scrollToSection('#defandant')">
+                <span>Continue to Defandant Section</span>
+                <i class="fas fa-user ml-2"></i>
+            </button>
+        </section>
+
+        <section
+            class="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-green-700 to-green-500"
+            id="defandant">
+            <h1 class="text-6xl font-bold text-center">Defendant</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Seal_of_the_United_States_Department_of_State.svg/2048px-Seal_of_the_United_States_Department_of_State.svg.png"
+                class="max-w-300 mt-10 mb-10" style="max-width:15%;" />
+            <div style="max-width: 75%;">
+                <p class="mt-8 text-xl">
+                    claimed that the requirements for contraceptive coverage were
+                    necessary to guarantee women's access to crucial medical services.
+                    The contraceptive mandate was cited as the main justification for
+                    the US government's position that women needed to have access to
+                    basic healthcare services. And that undermining the ACA's goals and
+                    efficacy by allowing corporations a religious exemption (defendant
+                    argument).
+                </p>
+            </div>
+            <button class="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full 
+        focus:outline-none focus:shadow-outline inline-flex items-center mt-10" onclick="scrollToSection('#constitution')">
+                <span>Continue to Constitution Section</span>
+                <i class="fas fa-scroll ml-2"></i>
+            </button>
+        </section>
+
+        <section class="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-red-700 to-red-500"
+            id="constitution">
+            <h1 class="text-6xl font-bold text-center">Constitutional Questions</h1>
+            <img src="https://bmccprodstroac.blob.core.windows.net/uploads/2019/09/constitution.png"
+                class="max-w-300 mt-10 mb-20" style="max-width:20%;" />
+            <div style="max-width:50%">
+            <ul class="list-none list-inside mb-10">
+                <li class="mb-2">
+                    <span class="mr-2"><i class="fas fa-scroll"></i></span>
+                    Since the lower courts reached conflicting conclusions regarding whether for-profit businesses,
+                    particularly closely held ones, could claim a religious exemption from the Affordable Care Act's
+                    requirement that they cover contraception, the case was appealed to the Supreme Court.
+                </li>
+                <li class="mb-2">
+                    <span class="mr-2"><i class="fas fa-scroll"></i></span>
+                    The Supreme Court agreed to hear the case because it raised a significant and divisive
+                    question regarding how to interpret the First Amendment and the Religious Freedom Restoration Act.
+                </li>
+                <li class="mb-2">
+                    <span class="mr-2"><i class="fas fa-scroll"></i></span>
+                    The Supreme Court agreed to hear the case because it raised a significant and divisive
+                    question regarding how to interpret the First Amendment and the Religious Freedom
+                    Restoration Act.
+                </li>
+            </ul>
+            </div>
+            <button class="
+            bg-purple-500 hover:bg-blue-700 text-white 
+            font-bold py-2 px-4 rounded-full 
+    focus:outline-none focus:shadow-outline inline-flex items-center"
+     onclick="scrollToSection('#decision')">
+                <span>Continue to Decision Section</span>
+                <i class="fas fa-gavel"></i>
+            </button>
+        </section>
+
+        <section
+            class="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-purple-700 to-purple-500"
+            id="decision">
+            <h1 class="text-6xl font-bold text-center mt-10 mb-20">Supreme Courts Decision</h1>
+            <img src="https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/POLL/ru36_ckcukkg_cz7nan4na.jpg"
+                class="max-w-300 mb-10" style="max-width:20%;" />
+            <div style="max-width: 50%;">
+                <li class="mb-2">
+                    <span class="mr-2"><i class="fas fa-gavel"></i></span>
+                    The court ruled in Hobby Lobby's favor. claiming that the right to religious freedom enjoyed by
+                    for-profit corporations was hampered by the contraceptive mandate supported by Patient Protection
+                    and Affordable. They used this method of decoding because the owners of Hobby
+                    Lobby claimed that requiring their staff to use birth control went against their religious
+                    principles.
+                    It was a 5 to 4 vote.
+                </li>
+                <li class="mb-2">
+                    <span class="mr-2"><i class="fas fa-gavel"></i></span>
+                    Justice Antony Kennedy argued in the concurring opinion that the government could have
+                    found a less onerous way to grant women access to contraception without interfering with
+                    corporate religious freedoms. Justices Sonia Sotomayor and Ruth Bader Ginsburg, on the other
+                    hand, dissented from both the conclusions and the logic of the majority opinion in their
+                    dissenting opinions. The majority decision, they claimed, had expanded corporate rights in an
+                    unheard-of way.
+                </li>
+                <li class="mb-2">
+                    <span class="mr-2"><i class="fas fa-gavel"></i></span>
+                    Since the case's resolution increased religious freedom at the expense of women's
+                    reproductive rights, many people think that the case was unfairly resolved. Additionally, it
+                    created a risky precedent for businesses looking to get around other federal laws. It raised the
+                    issue of whether these corporations qualified for protections for religious freedom under the
+                    RFRA and the First Amendment. Legal experts contend that this RFRA interpretation was too
+                    broad and at odds with the law's original goals.
+                </li>
+            </div>
+            <button class="bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full 
+focus:outline-none focus:shadow-outline inline-flex items-center mt-10" onclick="scrollToSection('#significance')">
+                <span>Continue to Significance Section</span>
+                <i class="fas fa-scroll ml-2"></i>
+            </button>
+        </section>
+
+        <section class="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-yellow-700 to-yellow-500"
+        id="significance">
+        <h1 class="text-6xl font-bold text-center">Significance of the Case</h1>
+        <img src="https://www.roosevelt.edu/sites/default/files/images/2020-redesign-assets/infographics/why-this-matters.png"
+            class="max-w-300" style="max-width:20%;" />
+        <div style="max-width: 50%;">
+            <p class="mt-8 text-xl">
+                The case was significant because it reduced the ACA's mandate that all employers cover
+                contraceptives and broadened the scope of corporate rights to exercise their religion. It had
+                implications for how much contraceptive coverage was required by the ACA, the rights of
+                corporations to practice their religion, and ongoing discussions about the place of corporations
+                in American society.
+            </p>
+        </div>
+        <button class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full 
+focus:outline-none focus:shadow-outline inline-flex items-center mt-10" onclick="scrollToSection('#biblography')">
+            <span>Continue to Biblography Section</span>
+            <i class="fas fa-book ml-2"></i>
+        </button>
+    </section>
+
+        <section class="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-700 to-gray-500"
+            id="biblography">
+            <h1 class="text-6xl font-bold text-center">Bibliography</h1>
+            <img src="https://www.wabashcenter.wabash.edu/wp-content/themes/wabash-child-theme/images/icon-bibliography.png"
+                class="max-w-300 mt-10 mb-10" style="max-width:15%;" />
+            <div style="max-width: 50%;">
+                <ul>
+                    <li class="mb-2">
+                        <span class="mr-2"><i class="fas fa-book"></i></span>
+                        Burwell v. Hobby Lobby Stores, Inc. (n.d.). Quimbee.
+                        https://www.quimbee.com/cases/burwell-v-hobby-lobby-stores-inc
+                    <li class="mb-2">
+                        <span class="mr-2"><i class="fas fa-book"></i></span>
+                        Burwell v. Hobby Lobby (2014) | The Embryo Project Encyclopedia. (n.d.).
+                        https://embryo.asu.edu/pages/burwell-v-hobby-lobby-2014#:~:text=In%20the%202014%
+                        20case%20Burwell,corporations'%20right%20to%20religious%20freedom
+                    </li>
+                    <li class="mb-2">
+                        <span class="mr-2"><i class="fas fa-book"></i></span>
+                        National Archives and Records Administration. (n.d.). The constitution of the United States: A
+                        transcription. National Archives and Records Administration. Retrieved March 12, 2023, from
+                        https://www.archives.gov/founding-docs/constitution-transcript
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <section></section>
+    <footer></footer>
+    <script>
+        function scrollToSection(id) {
+            var element = document.querySelector(id)
+            element.scrollIntoView({
+                behavior: 'smooth',
+            })
+        }
+    </script>
+</body>
+
+</html>
